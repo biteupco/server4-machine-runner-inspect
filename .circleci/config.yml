@@ -1,12 +1,12 @@
 version: 2.1
-
+# from biteupco/server4-machine-runner-inspect
 jobs:
   pingpong:
     machine: true
     resource_class: kelvintaywl-cci/ec2-linux2023-tf
     steps:
       - checkout
-      - run: echo "I am alive!"
+      - run: echo "from biteupco/server4-machine-runner-inspect"
 
 workflows:
   main:
